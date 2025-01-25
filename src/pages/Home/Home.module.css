@@ -1,0 +1,76 @@
+.titleHome{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    height: 30vh;
+    justify-content: center;
+}
+
+.imgHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.imgHome img{
+    user-select: none;
+    height: 200px;
+    width: auto;
+    animation: rodaAroda 6s linear infinite;
+}
+
+@keyframes rodaAroda{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    25%{
+        transform: rotate(90deg);
+    }
+    
+    50%{
+        transform: rotate(180deg);
+    }
+    
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.buttonsHome{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.buttonsHome button{
+    background-color: var(--blue);
+    height: 8.5vh;
+    width: 12vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all .4s;
+}
+
+.buttonsHome button:hover{
+    background-color: #007bffb2;
+    height: 9vh;
+    width: 12.5vw;
+}
+
+.buttonsHome button{
+    color: var(--white) !important;
+    font-weight: 500;
+}

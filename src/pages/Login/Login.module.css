@@ -1,0 +1,111 @@
+.divPrincForms{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+}
+
+.imgFormRegistro{
+    user-select: none;
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    animation: rodaAroda 6s linear infinite;
+}
+
+.DivIntoForm{
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+}
+
+.DivIntoForm form{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50vw;
+}
+
+.DivIntoForm form label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.DivIntoForm form label input{
+    width: 19vw;
+    outline: none;
+    border: none;
+    padding: .4rem .5rem;
+    border-radius: 2px;
+    font-size: 1.02rem;
+}
+
+.DivIntoForm form button{
+    margin-top: 1rem;
+    background-color: var(--blue);
+    padding: 1.5vh 6.7vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all .4s;
+    color: var(--white);
+}
+
+
+.DivIntoForm form button:hover{
+    background-color: #007bffb2;
+    padding: 1.9vh 7vw;
+}
+
+
+@keyframes rodaAroda{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    25%{
+        transform: rotate(90deg);
+    }
+    
+    50%{
+        transform: rotate(180deg);
+    }
+    
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.registrarSe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.registrarSe a{
+    color: var(--blue);
+    text-decoration: underline !important;
+}
+
+.registrarSe p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
+}

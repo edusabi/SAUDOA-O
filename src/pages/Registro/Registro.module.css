@@ -1,0 +1,119 @@
+.divPrincForms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.imgFormRegistro{
+    user-select: none;
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    animation: rodaAroda 6s linear infinite;
+}
+
+.DivIntoForm{
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+    position: relative;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    width: 50vw;
+}
+
+.DivIntoForm form{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50vw;
+}
+
+.DivIntoForm form label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.DivIntoForm form label input{
+    width: 19vw;
+    outline: none;
+    border: none;
+    padding: .4rem .5rem;
+    border-radius: 2px;
+    font-size: 1.02rem;
+}
+
+.DivIntoForm form button{
+    margin-top: 1rem;
+    background-color: var(--blue);
+    padding: 1.5vh 6.7vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all .4s;
+    color: var(--white);
+}
+
+
+.DivIntoForm form button:hover{
+    background-color: #007bffb2;
+    padding: 1.9vh 7vw;
+}
+
+
+@keyframes rodaAroda{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    25%{
+        transform: rotate(90deg);
+    }
+    
+    50%{
+        transform: rotate(180deg);
+    }
+    
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.registrarSeR{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.registrarSeR a{
+    color: var(--blue);
+    text-decoration: underline !important;
+}
+
+.registrarSeR p{
+    display: flex;
+    gap: .5rem;
+}
+
+.imgPreviewRegistro {
+    border-radius: 50%; /* Transforma em círculo */
+    border: 3px solid var(--blue);
+    width: 200px;       /* Largura fixa */
+    height: 200px;      /* Altura fixa (igual à largura para um círculo perfeito) */
+    object-fit: cover; /* Preenche o círculo mantendo a proporção e centralizando */
+    object-position: center center; /* Centraliza a imagem dentro do círculo */
+}
