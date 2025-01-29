@@ -7,6 +7,7 @@ import PageInicial from './pages/PageInicial/PageInicial';
 import About from './pages/About/About';
 import Registro from './pages/Registro/Registro';
 import Login from './pages/Login/Login';
+import EditPerfil from './pages/EditPerfil/EditPerfil';
 
 /////components
 import NotFound from "./components/NotFound/NotFound";
@@ -19,17 +20,20 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+
           {/* Rota pública */}
           <Route path='/' element={<Home />} />
 
           {/* Rotas protegidas */}
           <Route path='/pageInicial' element={<RotaProtegida> <PageInicial /> </RotaProtegida>}/>
           <Route path='/about' element={<RotaProtegida> <About /> </RotaProtegida>}/>
+          <Route path='/editarPerfil' element={<RotaProtegida> <EditPerfil /> </RotaProtegida>}/>
 
           {/* Rotas públicas */}
           <Route path='/login' element={<Login />} />
           <Route path='/registro' element={<Registro />} />
           <Route path='*' element={<NotFound />} />
+
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,122 @@
+.pessoasAjuda {
+    position: absolute;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    height: 95%; /* Ajuste a altura do contêiner */
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto; /* Adiciona o scroll vertical */
+    overflow-x: hidden; /* Evita scroll horizontal */
+    padding: .5rem; /* Adiciona um espaçamento interno */
+}
+
+.pessoasAjuda > div {
+    width: 100%; /* Faz o conteúdo ocupar toda a largura do contêiner */
+}
+
+/* Personalizando o scroll */
+.pessoasAjuda::-webkit-scrollbar {
+    width: 8px; /* Largura do scroll */
+}
+
+.pessoasAjuda::-webkit-scrollbar-track {
+    background: white; /* Cor do fundo do track */
+    border-radius: 5px; /* Bordas arredondadas no track */
+}
+
+.pessoasAjuda::-webkit-scrollbar-thumb {
+    background: white; /* Cor do thumb (barra de rolagem) */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.pessoasAjuda::-webkit-scrollbar-thumb:hover {
+    background: white; /* Cor ao passar o mouse */
+}
+
+/* Para navegadores que não suportam WebKit */
+.pessoasAjuda {
+    scrollbar-width: thin; /* Largura fina */
+    scrollbar-color: var(--blue) rgb(68, 68, 68); /* Thumb e track */
+}
+
+
+.pessoasAjuda h2{
+    text-align: center;
+}
+
+
+/* isDorD */
+.divPrincDorD{
+    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    z-index: 2;
+    background-color: var(--bg-color);
+    border: 2px solid var(--blue);
+    width: 50vw;
+    height: 600px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.divPrincDorD form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+.divPrincDorD form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.divPrincDorD form div label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.divButtonIsDorD{
+    text-align: center;
+}
+
+.divButtonIsDorD button{
+    width: 18vw;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+.closeFormIsDorD{
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.setMessageDiv{
+    position: absolute;
+    background-color: var(--blue);
+    border-radius: 10px 10px 0 10px;
+    width: 250px;
+    height: 50px;
+    padding: 1rem;
+    right: 30px;
+    top: 90%;
+}

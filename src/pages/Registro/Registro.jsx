@@ -62,14 +62,13 @@ const Registro = () => {
         },
       });
 
-      const data = response.data;
+      
 
-      if(data == 200){
+      if(response.status == 200){
         navigate("/login")
       }
 
       console.log(response);
-      console.log(data);
     } catch (error) {
       setErros(error.response?.data?.message || "Erro ao registrar.");
       setNome("")

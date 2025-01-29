@@ -7,11 +7,16 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+
+    position: fixed;
 }
 
 .imgNavbar{
-    border-radius: 50%;
+    border-radius: 50%; /* Transforma em círculo */
     border: 3px solid var(--blue);
+    width: 100px;       /* Largura fixa */
+    height: 100px;      /* Altura fixa (igual à largura para um círculo perfeito) */
+    object-fit: cover; /* Preenche o círculo mantendo a proporção e centralizando */
 }
 
 .divNomeFoto{
